@@ -1,0 +1,9 @@
+<h1>Forum#new</h1>
+<p></p>
+<%= form_for :forum do |f| %>
+    <p>
+      <%= f.label :titre %>
+      <%= f.text_field :titre %>
+    </p>
+<p><%= f.submit %></p>
+<% end %>
