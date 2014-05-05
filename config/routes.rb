@@ -28,6 +28,9 @@ Rails.application.routes.draw do
   end
   post 'topic/:topic_id/message/new' => 'message#create'
 
+  resources :forum
+  post '/forum/new' => 'forum#create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
