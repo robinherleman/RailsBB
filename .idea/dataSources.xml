@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="906248656">
+  <component name="DataSourceManagerImpl" format="xml" hash="2460594565">
     <data-source source="LOCAL" name="Rails RailsBB: development" uuid="6d699e67-d199-421e-b529-98731cc96cb3">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\rmoulin\RubymineProjects\RailsBB\db\development.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:db/development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails RailsBB: test" uuid="8ba256ea-50da-4aa9-bbbd-b1f2dd95a5f7">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:db/test.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails RailsBB: production" uuid="d801fc7b-e704-4ad6-8ca3-5e8522f559c0">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:db/production.sqlite3</jdbc-url>
       <libraries />
     </data-source>
   </component>
