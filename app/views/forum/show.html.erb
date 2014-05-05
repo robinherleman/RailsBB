@@ -1,0 +1,5 @@
+<h1>Forum#index</h1>
+<p><%= link_to "New", new_forum_topic_path(@forum) %></p>
+<% @forum.topics.each do |topic| %>
+<p><%= link_to topic.titre, topic %> <%= topic.messages.count %> </p>
+<% end %>

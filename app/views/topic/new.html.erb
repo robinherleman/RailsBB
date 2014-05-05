@@ -1,0 +1,13 @@
+<h1>Topic#new</h1>
+<p></p>
+<%= form_for :topic do |f| %>
+    <p>
+      <%= f.label :titre %>
+      <%= f.text_field :titre %>
+    </p>
+    <p>
+      <%= f.label :contenu %>
+      <%= f.text_area :contenu %>
+    </p>
+<p><%= f.submit %></p>
+<% end %>
