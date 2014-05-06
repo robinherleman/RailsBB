@@ -12,11 +12,8 @@ Rails.application.routes.draw do
   root 'index#index'
 
   resources :forum
-  #get 'forum_path' => 'forum#index'
 
   resources :topic
-  #get 'topic_path' => 'topic#index'
-
 
   resources :forum do
     resources :topic
@@ -32,7 +29,6 @@ Rails.application.routes.draw do
   post '/forum/new' => 'forum#create'
 
   resources :message
-  delete 'message/:id' => 'message#destroy'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
