@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/RailsBB.iml" filepath="$PROJECT_DIR$/.idea/RailsBB.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/basic-auth-master/basic-auth-master/.idea/basic-auth.iml" filepath="$USER_HOME$/Desktop/basic-auth-master/basic-auth-master/.idea/basic-auth.iml" />
     </modules>
   </component>
 </project>
