@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="051ad199-4bf8-4980-8dff-5f76084ed325" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/message/show.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/message_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/message_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/topic/show.html.erb" afterPath="$PROJECT_DIR$/app/views/topic/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RailsBB.iws" />
@@ -84,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/topic/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="170">
-              <caret line="3" column="81" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.14825581" vertical-offset="0" max-vertical-offset="344">
+              <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -104,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/message/show.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="344">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -152,8 +151,8 @@
         <option value="$PROJECT_DIR$/app/controllers/topic_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/forum_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/topic/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/message_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/topic/show.html.erb" />
       </list>
     </option>
   </component>
@@ -687,7 +686,11 @@
       <created>1399384251064</created>
       <updated>1399384251064</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Delete messages">
+      <created>1399384433920</created>
+      <updated>1399384433920</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1104,10 +1107,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/topic/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/message/show.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="170">
-          <caret line="3" column="81" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="370">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1120,10 +1123,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/message/show.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/topic/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="370">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.14825581" vertical-offset="0" max-vertical-offset="344">
+          <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
           <folding />
         </state>
       </provider>
