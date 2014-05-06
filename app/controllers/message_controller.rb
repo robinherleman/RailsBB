@@ -1,4 +1,6 @@
 class MessageController < ApplicationController
+  before_filter :authenticate_user, :only => [:new, :destroy]
+
   def new
   end
 
@@ -10,6 +12,7 @@ class MessageController < ApplicationController
     @topic = Topic.find(params[:topic_id])
     m = Message.new(params.require(:message).permit(:contenu))
     m.topic = @topic
+    m.user = current_user
     m.save
     redirect_to topic_path(@topic)
   end

@@ -1,5 +1,13 @@
-<h1>Topic#show</h1>
-<p><%= link_to "New", new_topic_message_path(@topic) %></p>
+<h1><%= @topic.titre %></h1>
+
 <% @topic.messages.each do |message| %>
-    <p><%= message.contenu %> <%= button_to "Delete", message, method: :delete  %></p>
+    <p><%= message.contenu %></p>
+    <p>posted by <%= message.user.username %></p>
+    <% if message.user == current_user %>
+        <p><%= button_to "Delete", message, method: :delete  %></p>
+    <% end %>
+<% end %>
+
+<% if !current_user.nil? %>
+    <p><%= link_to "Reply", new_topic_message_path(@topic) %></p>
 <% end %>
