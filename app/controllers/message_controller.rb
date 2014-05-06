@@ -9,4 +9,8 @@ class MessageController < ApplicationController
     m.save
     redirect_to topic_path(@topic)
   end
+
+  def delete
+
+  end
 end
