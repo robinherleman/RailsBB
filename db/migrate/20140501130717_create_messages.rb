@@ -5,6 +5,7 @@ class CreateMessages < ActiveRecord::Migration
 
       t.datetime :date
       t.references :topic, index: true
+      t.references :user, index: true
       t.timestamps
     end
   end
