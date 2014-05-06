@@ -2,6 +2,10 @@ class MessageController < ApplicationController
   def new
   end
 
+  def show
+    
+  end
+
   def create
     @topic = Topic.find(params[:topic_id])
     m = Message.new(params.require(:message).permit(:contenu))
