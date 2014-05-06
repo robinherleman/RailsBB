@@ -23,11 +23,13 @@ ActiveRecord::Schema.define(version: 20140501131805) do
     t.text     "contenu"
     t.datetime "date"
     t.integer  "topic_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "messages", ["topic_id"], name: "index_messages_on_topic_id"
+  add_index "messages", ["user_id"], name: "index_messages_on_user_id"
 
   create_table "topics", force: true do |t|
     t.string   "titre"
@@ -37,5 +39,17 @@ ActiveRecord::Schema.define(version: 20140501131805) do
   end
 
   add_index "topics", ["forum_id"], name: "index_topics_on_forum_id"
+
+  create_table "users", force: true do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
+    t.string   "password_reset_token"
+    t.datetime "password_expires_after"
+    t.string   "authentication_token"
+    t.datetime "last_signed_in_on"
+    t.datetime "signed_up_on"
+  end
 
 end

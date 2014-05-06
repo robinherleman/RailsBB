@@ -47,7 +47,7 @@ class AuthenticationController < ApplicationController
   end
 
   def register
-    @user = User.new(params[:user])
+    @user = User.new(user_params)
 
     # Don't use !verify_recaptcha, as this terminates the connection with the server.
     # It almost seems as if the verify_recaptcha is being called twice with we use "not".
@@ -228,5 +228,9 @@ class AuthenticationController < ApplicationController
       user.authentication_token = nil
       cookies.permanent[:auth_token] = nil
     end
+  end
+
+  def user_params
+    params.require(:user).permit(:username, :email, :password, :salt, :encrypted_password)
   end
 end
