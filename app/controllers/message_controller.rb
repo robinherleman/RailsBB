@@ -10,7 +10,10 @@ class MessageController < ApplicationController
     redirect_to topic_path(@topic)
   end
 
-  def delete
-
+  def destroy
+    m = Message.find(params[:id])
+    t = m.topic
+    m.destroy
+    redirect_to topic_path(t)
   end
 end
