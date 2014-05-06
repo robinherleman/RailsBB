@@ -15,6 +15,7 @@ class TopicController < ApplicationController
     m = Message.new
     m.contenu = topic_params[:contenu]
     m.topic = t
+    m.user = current_user
     m.save
     redirect_to topic_path(t)
   end
